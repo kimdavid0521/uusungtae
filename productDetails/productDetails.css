@@ -1,16 +1,90 @@
+/* 전체 컨테이너 스타일 */
 .container {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
   gap: 20px;
 }
 
-#product_img > img {
-  width: 430px;
-  height: 500px;
-  image-object: cover;
+/* 상품 이미지 */
+#product_img img {
+  width: 350px;
+  height: auto;
+  border-radius: 8px;
 }
 
-#product_count > input {
+/* 상품 정보 */
+.product_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 상품명 스타일 */
+#product_name h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#product_name p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* 가격 정보 스타일 */
+#product_price h1 {
+  font-size: 22px;
+  color: #e60012;
+  font-weight: bold;
+}
+
+/* 쿠폰 버튼 스타일 */
+#product_coupon button {
+  background-color: #ff6b00;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#product_coupon button:hover {
+  background-color: #e05a00;
+}
+
+/* 상세 정보 테이블 스타일 */
+#product_details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#product_details th,
+#product_details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#product_details th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  width: 120px;
+}
+
+/* 상품 개수 선택 */
+#product_count input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
 }
