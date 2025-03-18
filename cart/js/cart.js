@@ -24,3 +24,12 @@ item.addEventListener("click", () => {
     }, 3000);
   }, 30);
 });
+const third_item = document.getElementById("third_item_title");
+third_item.addEventListener("click", () => {
+  console.log("세번째 버튼 클릭");
+});
+
+const five_item = document.getElementById("five_item_title");
+five_item.addEventListener("click", () => {
+  console.log("다섯번째 버튼 클릭");
+});
