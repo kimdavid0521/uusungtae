@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../js/mypage.js" /> -->
+    <script src="../js/mypage.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -15,9 +17,15 @@
         <div class="profile-info">
           <img src="profile.jpg" alt="프로필 사진" class="profile-img" />
           <div class="details">
-            <p><strong>이름:</strong> 홍길동</p>
-            <p><strong>이메일:</strong> example@email.com</p>
-            <p><strong>연락처:</strong> 010-1234-5678</p>
+            <p><strong>이름:</strong> <span id="name-text">홍길동</span></p>
+            <p>
+              <strong>이메일:</strong>
+              <span id="email-text">example@email.com</span>
+            </p>
+            <p>
+              <strong>연락처:</strong>
+              <span id="phone-text">010-1234-5678</span>
+            </p>
           </div>
         </div>
         <button class="edit-btn">정보 수정</button>
