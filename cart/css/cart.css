@@ -1,0 +1,38 @@
+h1 {
+  background-color: black;
+  color: white;
+  font-size: 80px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#item {
+  width: 70%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-align: center;
+
+  padding: 20px;
+}
+
+#item > div {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: grey;
+  padding: 5px;
+  font-weight: 500;
+}
+
+button {
+  background-color: blue;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#item_container {
+  position: relative;
+  text-align: center;
+}
