@@ -1,34 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>유유성태 팀 소개</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 20px; }
-        .team-name { font-size: 32px; font-weight: bold; margin-bottom: 20px; }
-        .member-name { font-size: 20px; margin: 10px 0; }
+      /* Reset and base styles */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+        color: #333;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffffcc;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+      }
+
+      .team-name {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2c3e50;
+      }
+
+      .member-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .member-item {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        text-align: center;
+      }
+
+      .member-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .member-item a {
+        text-decoration: none;
+        color: #2980b9;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+
+        .team-name {
+          font-size: 28px;
+        }
+
+        .member-item a {
+          font-size: 18px;
+        }
+      }
     </style>
-</head>
-<body>
-<div class="team-name">팀 이름: 유유성태</div>
-<div id="team-members"></div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="team-name">팀 이름: 유유성태</div>
+      <div class="member-list" id="team-members"></div>
+    </div>
 
-<script>
-const teamMembers = [
-    { name: '김태영', pageLink: 'taeyoung.html' },
-    { name: '김성학', pageLink: 'hak.html' },
-    { name: '이유민', pageLink: 'yumin.html' }
-];
+    <script>
+      const teamMembers = [
+        { name: '김태영', pageLink: 'taeyoung.html' },
+        { name: '김성학', pageLink: 'hak.html' },
+        { name: '이유민', pageLink: 'yumin.html' },
+      ];
 
-const membersContainer = document.getElementById('team-members');
+      const membersContainer = document.getElementById('team-members');
 
-teamMembers.forEach(member => {
-    const memberDiv = document.createElement('div');
-    memberDiv.className = 'member-name';
-    memberDiv.innerHTML = `<a href="${member.pageLink}">${member.name}</a>`;
-    membersContainer.appendChild(memberDiv);
-});
-</script>
-</body>
+      teamMembers.forEach((member) => {
+        const memberDiv = document.createElement('div');
+        memberDiv.className = 'member-item';
+        memberDiv.innerHTML = `<a href="${member.pageLink}">${member.name}</a>`;
+        membersContainer.appendChild(memberDiv);
+      });
+    </script>
+  </body>
 </html>
