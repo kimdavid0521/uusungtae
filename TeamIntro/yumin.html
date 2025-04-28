@@ -1,22 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>이유민 소개</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 20px; }
-        .name { font-size: 24px; font-weight: bold; }
-        .detail { margin-top: 10px; }
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 20px;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .detail {
+        margin-top: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="name">이유민</div>
     <div class="detail">
-        <p>출생년도: 01년생</p>
-        <p>MBTI: ENFJ</p>
-        <p>해시태그: #뽀야미 #홀란드 #엄지윤</p>
-        <p>진행한 업무: 코드 리뷰 진행, 배포 환경 설정</p>
+      <p>출생년도: 01년생</p>
+      <p>MBTI: ENFJ</p>
+      <p>해시태그: #뽀야미 #홀란드 #엄지윤</p>
+      <p>진행한 업무: 코드 리뷰 진행, 배포 환경 설정</p>
     </div>
     <a href="index.html">← 팀 목록으로 돌아가기</a>
-</body>
+  </body>
+</html>
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이유민 소개</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Nanum Gothic', sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .profile-card {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        width: 350px;
+        text-align: center;
+      }
+
+      .profile-card .cover {
+        background: url('https://source.unsplash.com/350x150/?fitness') center/cover no-repeat;
+        height: 150px;
+      }
+
+      .profile-card .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        margin-top: -50px;
+        background: url('https://via.placeholder.com/100') center/cover no-repeat;
+        display: inline-block;
+      }
+
+      .profile-card h2 {
+        margin: 10px 0 5px;
+        font-size: 24px;
+        color: #333;
+      }
+
+      .profile-card p {
+        margin: 5px 0;
+        color: #777;
+        font-size: 14px;
+      }
+
+      .profile-card .hashtags {
+        margin: 10px 0;
+      }
+
+      .profile-card .hashtags span {
+        display: inline-block;
+        background-color: #f1f1f1;
+        color: #555;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin: 3px;
+        font-size: 12px;
+      }
+
+      .profile-card .tasks {
+        margin: 15px 20px;
+        text-align: left;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .profile-card .back-link {
+        display: block;
+        margin: 15px 0;
+        color: #3498db;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .profile-card .back-link:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 400px) {
+        .profile-card {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="cover"></div>
+      <div class="avatar"></div>
+      <h2>김태영</h2>
+      <p>출생년도: 01년생</p>
+      <p>MBTI: ENFJ</p>
+      <div class="hashtags">
+        <span>#뽀야미</span>
+        <span>홀란드</span>
+        <span>#엄지윤</span>
+      </div>
+      <div class="tasks">
+        <strong>진행한 업무:</strong>
+        <ul>
+          <li>코드 리뷰 진행</li>
+          <li>배포 환경 설정</li>
+        </ul>
+      </div>
+      <a href="index.html" class="back-link">← 팀 목록으로 돌아가기</a>
+    </div>
+  </body>
 </html>
